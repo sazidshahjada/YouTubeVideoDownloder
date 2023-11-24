@@ -1,7 +1,17 @@
 from pytube import YouTube
 import os
+import platform
 
-os.system('clear')
+os_name = platform.system()
+
+if os_name == 'Linux':
+    os.system('clear')
+elif os_name == 'Windows':
+    os.system('cls')
+else:
+    pass
+
+
 
 print(
     """
@@ -31,7 +41,8 @@ while True:
         print()
 
         if conf.upper() == 'Y':
-            path = '/home/sajid/Videos'
+            path = input('Enter Video Path: ')
+            print('\n')
             try:
                 print("Downloading ...")
                 video = yt.streams.get_highest_resolution()

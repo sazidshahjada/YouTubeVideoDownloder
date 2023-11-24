@@ -1,2 +1,6 @@
 # YouTubeVideoDownloder
-Video Downloader Program Using Pytube API
+Youtube Video Downloader Program Using Pytube's API
+
+Authur: Md Shahjada Sajid
+
+*** Fun Project ***
